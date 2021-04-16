@@ -24,10 +24,8 @@
         </div>
         <div>
             <strong>Jenis Kelamin:</strong>
-            <input type="radio" name="jns_kelamin" value="Laki-Laki">
-            <label for="Laki-Laki">Laki-Laki</label>
-            <input type="radio" name="jns_kelamin" value="Perempuan">
-            <label for="Perempuan">Perempuan</label>
+            <input type="radio" name="jns_kelamin" value="L" {{$siswa->jns_kelamin == 'L'? 'checked' : ''}}>Laki-Laki
+            <input type="radio" name="jns_kelamin" value="P" {{$siswa->jns_kelamin == 'P'? 'checked' : ''}}>Perempuan   
         </div>
         <div>
             <strong>Tempat Lahir:</strong>

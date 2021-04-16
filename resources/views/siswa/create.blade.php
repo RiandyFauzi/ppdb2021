@@ -28,10 +28,10 @@
         </div>
         <div>
             <strong>Jenis Kelamin:</strong>
-            <input type="radio" name="jns_kelamin" value="Laki-Laki">
-            <label for="Laki-Laki">Laki-Laki</label>
-            <input type="radio" name="jns_kelamin" value="Perempuan">
-            <label for="Perempuan">Perempuan</label>
+            <input type="radio" name="jns_kelamin" value="L">
+            <label for="L">Laki-Laki</label>
+            <input type="radio" name="jns_kelamin" value="P">
+            <label for="P">Perempuan</label>
         </div>
         <div>
             <strong>Tempat Lahir:</strong>
