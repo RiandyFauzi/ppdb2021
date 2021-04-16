@@ -1,4 +1,4 @@
-@extends('home')
+@extends('menu')
 @section('content')
 @if ($errors->any())
     <div>

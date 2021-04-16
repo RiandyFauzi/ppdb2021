@@ -1,4 +1,4 @@
-@extends('home')
+@extends('menu')
 @section('content')
 @if ($message = Session::get('success'))
     <div>
@@ -42,5 +42,4 @@
        @endforeach
     </table>
 </center>
-    {!! $data_siswa->links() !!}
 @endsection

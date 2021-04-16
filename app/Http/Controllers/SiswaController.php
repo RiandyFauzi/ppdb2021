@@ -14,10 +14,8 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        $data_siswa = Siswa::latest()->paginate(5);
-
-        return view('siswa.index', compact('data_siswa'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        $data_siswa = Siswa::get();
+        return view('siswa.index', compact('data_siswa'));
     }
 
     /**
