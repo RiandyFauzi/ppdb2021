@@ -111,7 +111,12 @@ class SiswaController extends Controller
      */
     public function destroy(Siswa $siswa)
     {
-        $siswa->delete();
+        try{
+            $siswa->delete();
+        } catch(\Exception err) {
+            return "Error: " . err->getMessage();
+        }
+      
         return redirect()->route('siswa.index')
             ->with('success','Data berhasil dihapus.');
     }
