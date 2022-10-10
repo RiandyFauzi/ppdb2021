@@ -14,7 +14,11 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        $data_siswa = Siswa::get();
+        try{
+            $data_siswa = Siswa::get();
+        } catch(\Exception err) {
+            return "Error: " . err->getMessage();
+        }
         return view('siswa.index', compact('data_siswa'));
     }
 
